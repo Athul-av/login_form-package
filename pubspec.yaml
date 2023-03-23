@@ -1,7 +1,7 @@
 name: login_form
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: log in form template with all functionalities
+version: 0.0.3
+homepage: https://github.com/Athul-av/login_form-package
 
 environment:
   sdk: '>=2.18.4 <3.0.0'

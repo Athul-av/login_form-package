@@ -11,29 +11,53 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A complete package for login. designed template anyone can modify
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+for login purpose. Can use validator , formkey and modify the ui
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+add the package in your flutter project and use 
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+
 
 ```dart
-const like = 'sample';
+class Home extends StatelessWidget {
+  Home({super.key});
+
+  TextEditingController controller1 = TextEditingController();
+  TextEditingController controller2 = TextEditingController();
+  GlobalKey<FormState> formkey = GlobalKey();
+  Function onButtonPressed = () {};
+  String? Function(String?)? validator1 = (value) {
+    log('hi');
+    return null;
+  }; 
+  String? Function(String?)? validator2 = (value) {
+    log('hey');
+    return null;
+  };
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+          child: LoginForm(
+              controller1: controller1,
+              controller2: controller2,
+              formkey: formkey,
+              onButtonPressed: onButtonPressed,
+              validator1: validator1,
+              validator2: validator2)),
+    );
+  }
+}
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+

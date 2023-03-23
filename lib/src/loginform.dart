@@ -9,26 +9,26 @@ class LoginForm extends StatelessWidget {
       required this.onButtonPressed,
       required this.validator1,
       required this.validator2,
-      this.containerWidth,
-      this.containerHeight,
-      this.containerColor,
-      this.textFieldLabel,
-      this.textFieldLabel2,
-      this.textColor1,
-      this.textColor2,
-      this.cursorColor,
-      this.textFieldColor1,
-      this.textFieldColor2,
-      this.textFieldIcon1,
-      this.textFieldIconSize1,
-      this.textFieldIconColor1,
-      this.textFieldIcon2,
-      this.textFieldIconColor2,
-      this.textFieldIconSize2,
-      this.buttonColor,
-      this.buttonText,
-      this.buttonTextColor,
-      this.buttonTextSize});
+      this.containerWidth = 350,
+      this.containerHeight = 300,
+      this.containerColor = const Color.fromARGB(255, 184, 210, 208),
+      this.textFieldLabel  = 'Enter name',
+      this.textFieldLabel2  = 'Enter password',
+      this.textColor1= Colors.white,
+      this.textColor2 = Colors.white,
+      this.cursorColor = Colors.white,
+      this.textFieldColor1 = const Color.fromARGB(255, 39, 39, 39),
+      this.textFieldColor2 = const Color.fromARGB(255, 39, 39, 39),
+      this.textFieldIcon1 = Icons.person,
+      this.textFieldIconSize1 = 20,
+      this.textFieldIconColor1 = Colors.white,
+      this.textFieldIcon2 = Icons.lock,
+      this.textFieldIconColor2 = Colors.white,
+      this.textFieldIconSize2 = 20,
+      this.buttonColor = Colors.teal,
+      this.buttonText = 'Log in',
+      this.buttonTextColor = Colors.white,
+      this.buttonTextSize = 15});
 
   TextEditingController controller1;
   TextEditingController controller2;
@@ -36,26 +36,26 @@ class LoginForm extends StatelessWidget {
   GlobalKey formkey;
   String? Function(String?)? validator1;
   String? Function(String?)? validator2;
-  double? containerWidth = 350;
-  double? containerHeight = 300;
-  Color? containerColor = const Color.fromARGB(255, 184, 210, 208);
-  String? textFieldLabel = 'Enter name';
-  String? textFieldLabel2 = 'Enter password';
-  Color? textColor1 = Colors.white;
-  Color? textColor2 = Colors.white;
-  Color? cursorColor = Colors.white;
-  Color? textFieldColor1 = const Color.fromARGB(255, 39, 39, 39);
-  Color? textFieldColor2 = const Color.fromARGB(255, 39, 39, 39);
-  IconData? textFieldIcon1 = Icons.person;
-  double? textFieldIconSize1 = 20;
-  Color? textFieldIconColor1 = Colors.white;
-  IconData? textFieldIcon2 = Icons.lock;
-  double? textFieldIconSize2 = 20;
-  Color? textFieldIconColor2 = Colors.white;
-  Color? buttonColor = Colors.teal;
-  String? buttonText = 'Log in';
-  Color? buttonTextColor = Colors.white;
-  double? buttonTextSize = 15;
+  double? containerWidth;
+  double? containerHeight;
+  Color? containerColor;
+  String? textFieldLabel;
+  String? textFieldLabel2;
+  Color? textColor1 ;
+  Color? textColor2; 
+  Color? cursorColor;
+  Color? textFieldColor1;
+  Color? textFieldColor2;
+  IconData? textFieldIcon1;
+  double? textFieldIconSize1;
+  Color? textFieldIconColor1;
+  IconData? textFieldIcon2;
+  double? textFieldIconSize2;
+  Color? textFieldIconColor2;
+  Color? buttonColor;
+  String? buttonText;
+  Color? buttonTextColor;
+  double? buttonTextSize;
   @override
   Widget build(BuildContext context) {
     return Container(
